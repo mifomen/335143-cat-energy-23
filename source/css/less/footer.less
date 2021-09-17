@@ -1,0 +1,137 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media @tablet {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 28px;
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 45px;
+  }
+}
+
+.footer__logotip {
+  width: 100%;
+  margin-top: 18px;
+  margin-bottom: 54px;
+
+  @media @tablet {
+    margin: 0;
+    width: 128px;
+    margin-top: 2px;
+  }
+}
+
+.footer__social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 33px;
+
+  @media @tablet {
+    margin: 0;
+
+    margin-left: 35px;
+    margin-top: 12px;
+    // justify-content: center;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--special-grey-2);
+    top: -21px;
+
+    @media @tablet {
+      display: none;
+    }
+  }
+
+  &::after {
+    top: auto;
+    bottom: -19px;
+  }
+}
+
+.footer__social-item {
+  width: 22px;
+
+  @media @tablet {
+    width: 30px;
+    margin-right: 25px;
+    margin-bottom: -3px;
+  }
+}
+
+.footer__social-item--second {
+  margin-right: 35px;
+  margin-left: 36px;
+
+  @media @tablet {
+    margin: 0;
+  }
+}
+
+
+.footer__authors {
+  margin-right: auto;
+  font-family: var(--font-second);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+
+  @media @tablet {
+    margin: 0;
+    margin-right: 15px;
+    margin-left: auto;
+    min-width: 115px;
+  }
+}
+
+.footer__authors-logotip {
+  margin-left: auto;
+  margin-top: 9px;
+
+  @media @tablet {
+    margin-left: 9px;
+    margin-top: 4px;
+  }
+}
+
+
+@media @tablet {
+  .footer__icon--vk {
+    width: 32px;
+    height: 22px;
+  }
+
+  .footer__icon--instagram {
+    width: 23px;
+    height: 23px;
+  }
+
+  .footer__icon--facebook {
+    width: 15px;
+    height: 37px;
+  }
+
+  .footer__social-link--last {
+    padding-left: 25px;
+  }
+
+
+}

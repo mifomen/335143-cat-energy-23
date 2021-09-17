@@ -1,29 +1,219 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="icon" href="img/favicon.png">
     <link rel="icon" href="img/favicon/icon-main.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/152.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" type="font/woff2">
-    <link rel="preload" href="fonts/bloggersans.woff2" as="font" type="font/woff2">
-    <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" type="font/woff2">
-    <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/oswaldregular.woff" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/oswaldmedium.woff" as="font" type="font/woff2">
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li></li>
+    <svg style="display: none;">
+      <symbol class="icon-vk" id="icon-vk" viewBox="0 0 23 16" fill="currentColor"><path class="icon-vk__path" d="M0 4c0-.6.5-1 1.3-1h3.3c.2 0 .4.1.4.3.4.9.7 1.7 1.2 2.3A28.6 28.6 0 0 0 8 8.1l.2-.1v-.2l.1-3.2c0-.2 0-.4-.2-.4a2 2 0 0 0-.7-.2c-.2 0-.4-.2-.4-.4v-.1c.4-.8 1.2-1.2 2.7-1.2H11c.6 0 1 .1 1.4.3.4.3.5.6.5 1.1V8h.3c.2 0 .4 0 .6-.2a12.7 12.7 0 0 0 2.6-4l.5-.4.7-.3h3.8c.3 0 .5.1.6.4l.2.2a1.6 1.6 0 0 1 0 .4v.1c0 .5-.3 1-.8 1.6L20 7.6c-.7.6-1 1-1.2 1.3-.2.1-.2.3-.2.4l.1.3 3.2 3.4.3.6c0 .3-.1.5-.4.7-.3.2-.6.3-1 .3H17c-.3 0-.6 0-1-.3a182 182 0 0 1-2.3-2.4 25.6 25.6 0 0 0-.4 1.6v.4c-.2.4-.5.6-1 .7H9.7a6 6 0 0 1-3.6-1.4c-1.2-.9-2.3-2-3.2-3.5A32.9 32.9 0 0 1 0 4Zm13.2 4.7c-.3 0-.6 0-.8-.2-.3-.1-.4-.3-.4-.6V3.7c0-.2 0-.4-.2-.5l-.8-.1H9.8a3 3 0 0 0-1.4.3c.6.2 1 .6 1 1.2v3.2c-.1.3-.2.6-.5.8l-.9.3c-.4 0-.8-.2-1-.5C6 6.9 5 5.6 4.5 4.3l-.2-.5H1v.5l.5 1c1.2 2.7 2.6 4.8 4 6.3s2.9 2.3 4.2 2.3H12l.2-.1.1-.2v-.2l.5-1.6.3-.5.6-.2c.3 0 .7.2 1 .6l2 2s.1.2.3.2h3.6c.4 0 .6-.1.6-.3v-.2l-3.2-3.3c-.2-.3-.4-.5-.4-.8 0-.3.2-.6.4-.9l1-1.2c.6-.5 1.1-1 1.5-1.6l.8-1.3.1-.3v-.2h-3.5c-.2 0-.4.2-.5.3l-.1.4c-.4.8-1.4 2.1-2.9 3.9-.3.2-.7.3-1 .3Z" fill="currentColor"/></symbol>
+      <symbol class="icon-instagram" id="icon-instagram" viewBox="0 0 16 16"><path class="icon-instagram__path" d="m8 0 3.3.1a6 6 0 0 1 1.9.4 4 4 0 0 1 2.3 2.3l.4 2a91.9 91.9 0 0 1 0 6.5 6 6 0 0 1-.4 1.9 4 4 0 0 1-2.3 2.3 6 6 0 0 1-2 .4 91.9 91.9 0 0 1-6.5 0 6 6 0 0 1-1.9-.4 4 4 0 0 1-2.3-2.3 6 6 0 0 1-.4-2 91.7 91.7 0 0 1 0-6.5c0-.7.2-1.3.4-1.9A4 4 0 0 1 2.8.5a6 6 0 0 1 2-.4H8Zm0 1a98.8 98.8 0 0 0-5 .4c-.7.4-1.3.9-1.6 1.6a98.8 98.8 0 0 0 0 10c.3.7.9 1.2 1.6 1.5a98.7 98.7 0 0 0 10 0c.7-.3 1.2-.8 1.5-1.6a98.7 98.7 0 0 0 0-10c-.3-.6-.8-1.2-1.6-1.5a98.8 98.8 0 0 0-5-.3Zm0 10.2a3 3 0 0 0 2.2-1 3 3 0 0 0 1-2.2 3 3 0 0 0-1-2.3A3 3 0 0 0 8 4.8a3 3 0 0 0-2.3 1A3 3 0 0 0 4.8 8a3 3 0 0 0 1 2.2 3 3 0 0 0 2.2 1Zm0-7.3a4 4 0 0 1 2.9 1.2A4 4 0 0 1 12 8a4 4 0 0 1-1.1 2.9 4 4 0 0 1-3 1.1A4 4 0 0 1 5.2 11a4 4 0 0 1-1.2-3c0-1 .4-2 1.2-2.8A4 4 0 0 1 8 4Zm5.2-.1-.3.6a1 1 0 0 1-.7.3c-.3 0-.5 0-.7-.3a.9.9 0 0 1-.2-.6 1 1 0 0 1 .9-1c.3 0 .5 0 .7.3.2.2.3.4.3.7Z" fill="currentColor"/></symbol>
+      <symbol class="icon-facebook" id="icon-facebook" viewBox="0 0 13 20" fill="currentColor" >
+        <path class="icon-facebook__path" d="M11.5 0.833252H8.75001C7.53443 0.833252 6.36864 1.30674 5.5091 2.14957C4.64956 2.99239 4.16667 4.1355 4.16667 5.32743V8.02394H1.41667V11.6193H4.16667V18.81H7.83334V11.6193H10.5833L11.5 8.02394H7.83334V5.32743C7.83334 5.08905 7.92992 4.86042 8.10182 4.69186C8.27373 4.52329 8.50689 4.4286 8.75001 4.4286H11.5V0.833252Z" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol viewBox="0 0 15 29" class="icon-facebook" id="icon-facebook-2"  class="icon-facebook" width="15" height="29" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="icon-facebook__path" d="M14 .8h-3.5c-1.5 0-3 .7-4.1 2C5.3 4 4.7 5.6 4.7 7.4v4H1.2V17h3.5v10.8h4.6V17h3.5l1.2-5.4H9.3v-4c0-.4.2-.7.4-1 .2-.2.5-.4.8-.4H14V.8Z" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    </svg>
+    <header class="header page-header">
+      <nav class="nav-menu">
+        <a class="nav-menu__logo">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop@1x.png 1x, img/logo-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet@1x.png 1x, img/logo-tablet@2x.png 2x">
+            <img class="nav-menu__img" src="img/logo-mobile.svg" alt="logotip" width="34" height="38">
+          </picture>
+        </a>
+         <img class="nav-menu__img nav-menu__img-part2" src="img/logo-mobile-2@1x.png" alt="logotip" srcset="img/logo-mobile-2@2x.png 2x"  width="101" height="18">
+        <ul class="nav-menu__list">
+          <li class="nav-menu__item">
+            <a class="nav-menu__link nav-menu__link--active">Главная</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="nav-menu__link" href="#">Каталог продукции</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="nav-menu__link" href="#">Подбор программы</a>
+          </li>
         </ul>
+        <button type="button" class="nav-menu__button js-menu-open">открыть меню</button>
       </nav>
     </header>
+    <main class="main main-page">
+      <section class="main-intro">
+        <div class="main-intro__background main-intro__background--change"></div>
+        <h1 class="main-intro__title">Функциональное питание для котов</h1>
+        <h2 class="main-intro__lead">Занялся собой? Займись котом!</h2>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop@1x.png 1x, img/logo-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.png 1x, img/index-can-tablet@2x.png 2x">
+          <img class="main-intro__img" srcset="index-can-mobile@2x.png 2x" src="img/index-can-mobile@1x.png" alt="main-basket" width="280" height="270">
+          </picture>
+          <a class="main-intro__link" href="#">Подобрать программу</a>
+        </section>
+        <section class="programs">
+          <h2 class="visually-hidden">Программы под любого кота</h2>
+          <ul class="programs__list">
+            <li class="programs__item programs__item--slim">
+              <h3 class="programs__name">Похудение</h3>
+              <p class="programs__description">
+                Ваш кот весит больше собаки и<br class="programs__description--mobile-br">
+                почти <br class="programs__description--tablet-br">утратил способность лазить<br class="programs__description--mobile-br">
+                по деревьям? <br class="programs__description--tablet-br">Пора на диету! Cat<br class="programs__description--mobile-br">
+                &nbsp;Energy Slim поможет <br class="programs__description--tablet-br"> вашему  <br class="programs__description--mobile-br">&nbsp;питомцу сбросить лишний вес.
+              </p>
+              <a class="programs__link" href="#">Каталог slim</a>
+            </li>
+            <li class="programs__item programs__item--pro">
+              <h3 class="programs__name">Набор массы</h3>
+              <p class="programs__description">
+                Заработать авторитет среди<br class="programs__description--mobile-br">
+                дворовых котов <br class="programs__description--tablet-br">и даже собак?<br class="programs__description--mobile-br">
+                Серия Cat Energy Pro поможет&nbsp;<br class="programs__description--mobile-br programs__description--tablet-br">
+                вашему коту нарастить<br class="programs__description--mobile-br">&nbsp;
+                необходимые<br class="programs__description--tablet-br">мышцы!
+              </p>
+              <a class="programs__link" href="#">Каталог pro</a>
+            </li>
+          </ul>
+        </section>
+        <section class="how-it-work">
+          <h2 class="how-it-work__title">Как это работает</h2>
+          <ul class="how-it-work__list">
+            <li class="how-it-work__item">
+              <div class="how-it-work__item-icon-wrapper">
+                <div class="how-it-work__item-icon how-it-work__item-icon--leaflet"></div>
+              </div>
+              <p class="how-it-work__description">
+                Функциональное питание<br>
+                содержит только полезные<br>
+                питательные вещества.
+              </p>
+            </li>
+            <li class="how-it-work__item">
+              <div class="how-it-work__item-icon-wrapper">
+                <div class="how-it-work__item-icon how-it-work__item-icon--composition"></div>
+              </div>
+              <p class="how-it-work__description">
+                Выпускается в виде порошка,<br>
+                который нужно лишь залить<br>
+                кипятком и готово.<br>
+              </p>
+            </li>
+            <li class="how-it-work__item">
+              <div class="how-it-work__item-icon-wrapper">
+                <div class="how-it-work__item-icon how-it-work__item-icon--cutlery"></div>
+              </div>
+              <p class="how-it-work__description">
+                Замените один-два приема<br>
+                обычной еды на наше<br>
+                функциональное питание.<br>
+              </p>
+            </li>
+            <li class="how-it-work__item">
+              <div class="how-it-work__item-icon-wrapper">
+                <div class="how-it-work__item-icon how-it-work__item-icon--clock "></div>
+              </div>
+              <p class="how-it-work__description">
+                Уже через месяц <br class="how-it-work__description--mobile-br"> &nbsp;наслаждайтесь<br class="how-it-work__description--tablet-br">изменениями <br class="how-it-work__description--mobile-br">
+                к лучшему <br class="how-it-work__description--tablet-br">вашего питомца!<br class="how-it-work__description--mobile-br">
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section class="example">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__explanations">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и <br class="example__explanations--tablet-br"> по-прежнему спит по 16 часов в день.
+          </p>
+          <div class="example__changes example__changes--first">
+            <span class="example__feature-value">5 кг</span>
+            <span class="example__feature-name">снижение веса</span>
+          </div>
+          <div class="example__changes">
+            <span class="example__feature-value">60 дней</span>
+            <span class="example__feature-name">затрачено времени</span>
+          </div>
+          <p class="example__feature-cost">Затраты на питание: 15 000 РУБ. </p>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/before-desktop-1@1x.png 1x, img/before-desktop-1@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/before-desktop-1@1x.png 1x, img/before-desktop-1@2x.png 2x">
+            <img class="example__cat-before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="cat-before-eating">
+          </picture>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/after-desktop-1@1x.png 1x, img/after-desktop-1@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/after-desktop-1@1x.png 1x, img/after-desktop-1@2x.png 2x">
+            <img class="example__cat-after" src="img/after-desktop-1@1x.png" srcset="img/after-desktop-1@2x 2x" alt="cat-after-not-eating">
+          </picture>
+          <div class="example__progress-bar">
+            <span class="example__progress-bar-text">было</span>
+            <div class="example__progress-bar-inner">
+              <div class="example__progress-bar-line">
+            </div>
+            </div>
+            <span class="example__progress-bar-text example__progress-bar-text--resault">стало</span>
+          </div>
+
+        </section>
+        <section class="location">
+          <h2 class="visually-hidden">Как нас найти</h2>
+          <p class="location__intro">
+            <span class="location__invite">
+              приглашаем<br>
+              к сотрудничеству<br>
+              дилеров!
+            </span>
+            <span class="location__address">
+              ул. Большая<br>
+              Конюшенная, д. 19/8<br><br class="location__address--tablet-br">
+              Санкт-Петербург<br>
+            </span>
+          </p>
+          <div class="location__map">
+            <div id="js-google-map" class="map__google"></div>
+              <img class="location__map-img" srcset="img/location@2x.png 2x" src="img/location@1x.png" alt="location">
+          </div>
+        </section>
+    </main>
+    <footer class="footer footer-page">
+      <img class="footer__logotip" width="128" height="24" src="img/footer-logo.svg" alt="">
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a href="" class="footer__social-link">
+            <svg class="footer__icon footer__icon--vk" width="23" height="16">
+              <use xlink:href="#icon-vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__social-item footer__social-item--second">
+          <a href="" class="footer__social-link">
+            <svg class="footer__icon footer__icon--instagram" width="16" height="16">
+              <use xlink:href="#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__social-item footer__social-item--last">
+          <a href="" class="footer__social-link footer__social-link--last">
+           <svg class="footer__icon footer__icon--facebook" width="10" height="18">
+             <use xlink:href="#icon-facebook-2"></use>
+           </svg>
+          </a>
+        </li>
+      </ul>
+      <p class="footer__authors">HTML Academy</p>
+      <img class="footer__authors-logotip" src="img/author-logo.svg" alt="authors-logotip" width="27" height="34">
+    </footer>
 
 
   <script src="js/script.min.js"></script>
-  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdh9DoiVSsIkmBxD_GcAHduSPQbHLYKbs&callback=initMap&libraries=&v=weekly" async></script> -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdh9DoiVSsIkmBxD_GcAHduSPQbHLYKbs&callback=initMap&libraries=&v=weekly" async></script>
   </body>
 </html>
