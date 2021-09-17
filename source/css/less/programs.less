@@ -6,6 +6,12 @@
     padding-left: 30px;
     padding-right: 30px;
   }
+
+  @media @desktop {
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+
+  }
 }
 
 .programs__list {
@@ -13,6 +19,12 @@
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
+
+  @media @desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5.9%;
+  }
 }
 
 .programs__item {
@@ -33,10 +45,14 @@
     margin-bottom: 30px;
   }
 
+  @media @desktop {
+
+  }
+
   &::before {
     position: absolute;
     width: 52px;
-    left: 20px;
+    left: 21px;
     top: 22px;
     height: 52px;
     display: block;
@@ -50,6 +66,14 @@
       left: auto;
       top: 87px;
       right: 62px;
+    }
+
+    @media @desktop {
+      width: 100px;
+      height: 100px;
+      right: auto;
+      left: 52px;
+      top: 47px;
     }
   }
 }
@@ -74,6 +98,12 @@
     line-height: 36px;
     text-align: left;
   }
+
+  @media @desktop {
+    margin-top: 75px;
+    width: 92%;
+    text-align: center;
+  }
 }
 
 .programs__description {
@@ -93,6 +123,11 @@
     margin-left: 10px;
     margin-top: 10px;
   }
+
+  @media @desktop {
+    margin-top: 62px;
+    margin-bottom: 19px;
+  }
 }
 
 @media @tablet {
@@ -102,9 +137,21 @@
 }
 
 .programs__description--tablet-br {
-  // display: none;
+  display: none;
 
   @media @tablet {
+    display: block;
+  }
+
+  @media @desktop {
+    display: none;
+  }
+}
+
+.programs__description--desktop-br {
+  display: none;
+
+  @media desktop {
     display: block;
   }
 }
@@ -138,10 +185,15 @@
     width: 32px;
     height: 10px;
     position: absolute;
-    top: 8px;
-    right: -57px;
+    top: 3px;
+    right: -47px;
     background-repeat: no-repeat;
     background-image: url("data:image/svg+xml,%3Csvg width='24' height='12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23000' stroke-width='2' d='M0 6h18'/%3E%3Cpath d='M24 6l-6.8 5.2V.8L24 6z' fill='%23000'/%3E%3C/svg%3E");
+
+    @media @tablet {
+      top: 8px;
+      right: -57px;
+    }
   }
 
 
@@ -171,6 +223,14 @@
     top: 77px;
     right: 92px;
   }
+
+  @media @desktop {
+    width: 70px;
+    height: 97px;
+    left: 70px;
+    top: 42px;
+    right: auto;
+  }
 }
 
 .programs__item--pro::after {
@@ -192,7 +252,14 @@
     left: auto;
     top: 134px;
     right: 27px;
-    z-index: 5;
+  }
+
+  @media @desktop {
+    width: 134px;
+    height: 100px;
+    left: 40px;
+    top: 68px;
+    right: auto;
   }
 }
 
@@ -205,14 +272,23 @@
     margin-left: 10px;
     margin-bottom: 19px;
   }
+
+  @media @desktop {
+    margin: 0;
+    margin-left: 30px;
+    margin-top: 80px;
+    margin-bottom: 10px;
+  }
 }
 
-// @media @tablet {
-//   .programs__item--pro .programs__link{
-
-//   }
-// }
-
 .programs__item--pro::before {
-  top: 91px;
+  top: 32px;
+
+  @media @tablet {
+    top: 91px;
+  }
+
+  @media @desktop {
+    top: 45px;
+  }
 }

@@ -6,7 +6,13 @@
   @media @tablet {
     padding-left: 5%;
     padding-right: 5%;
+  }
 
+  @media @desktop {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 210px auto auto;
+    margin-bottom: 18.5%;
   }
 }
 
@@ -19,6 +25,14 @@
 
   @media @tablet {
     display: none;
+  }
+
+  @media @desktop {
+    display: block;
+    left: 50%;
+    width: 720px;
+    height: 694px;
+    top: -35.4%;
   }
 
   &::after {
@@ -42,6 +56,15 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  @media @desktop {
+   // background-size: 80%;
+   background-image: url("../img/index-background-desktop@1x.png");
+ }
+
+ @media @desktop2x {
+    background-image: url("../img/index-background-desktop@1x.png");
+  }
 }
 
 .main-intro__title {
@@ -64,6 +87,21 @@
     margin-top: 39px;
     margin-left: 11%;
     order: -2;
+  }
+
+  @media @desktop {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 70%;
+    margin-top: auto;
+    margin-left: 15.6%;
   }
 }
 
@@ -89,6 +127,15 @@
     margin-left: 11.7%;
     order: -1;
   }
+
+  @media @desktop {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-top: 5.4%;
+    margin-left: 16%;
+  }
 }
 
 .main-intro__img {
@@ -101,7 +148,23 @@
     width: 709px;
     height: 609px;
     order: 2;
- }
+  }
+
+  @media @desktop {
+    width: 552px;
+    height: 499px;
+    margin: 0;
+    position: relative;
+    z-index: 5;
+    padding: 0;
+    grid-row-start: 1;
+    grid-row-end: -1;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-right: auto;
+    margin-top: 10px;
+    left: -47%;
+  }
 }
 
 .main-intro__link {
@@ -131,5 +194,16 @@
     width: 35%;
     margin-top: 51px;
     z-index: 5;
+  }
+
+  @media @tablet {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 0;
+    margin-top: 7.1%;
+    margin-left: 15.7%;
+    width: 33%;
   }
 }

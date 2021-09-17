@@ -1,6 +1,9 @@
 .location {
   background-color: var(--white);
 
+  @media @desktop {
+    position: relative;
+  }
 }
 
 .location__intro {
@@ -21,6 +24,20 @@
     padding-top: 45px;
     margin-bottom: 53px;
   }
+
+  @media @desktop {
+    width: 30%;
+    background-color: var(--white);
+    position: absolute;
+    z-index: 15;
+    top: 81px;
+    left: 7.5%;
+    padding-left: 78px;
+    padding-bottom: 25px;
+    justify-content: flex-start;
+
+
+  }
 }
 
 .location__invite {
@@ -35,6 +52,12 @@
   @media @tablet {
     font-size: 20px;
     line-height: 24px;
+  }
+
+  @media @desktop {
+    margin-top: 23px;
+    margin-bottom: 35px;
+    margin-right: 60px;
   }
 }
 
@@ -59,6 +82,12 @@
     text-align: right;
     font-size: 16px;
     line-height: 20px;
+  }
+
+   @media @desktop {
+    margin-top: 20px;
+    margin-left: 0;
+    text-align: left;
   }
 }
 
