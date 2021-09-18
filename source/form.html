@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="fonts/Oswald.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon/favicon_32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="favicon/favicon_32.svg" sizes="any" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon/favicon-apple_180.png" type="image/png">
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
+
+<body class="page__body">
+
+  <header class="header-page">
+    <div class="page__leveler header-page__wrapper">
+      <a class="header-page__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="img/logo.svg#desktop">
+          <source media="(min-width: 768px)" srcset="img/logo.svg#tablet">
+          <img class="header-page__image" src="img/logo.svg#mobile" alt="Логотип" width="33" height="38">
+        </picture>
+        <img class="header-page__logo-img" src="img/logo.svg#logotype" alt="Логотип" width="101" height="18">
+      </a>
+
+      <nav class="nav-menu nav-menu--nojs">
+        <button class="nav-menu__toggle" type="button" hidden>
+          <span class="page__visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="nav-menu__list">
+          <li class="nav-menu__item">
+            <a class="nav-menu__link" href="index.html">Главная</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="nav-menu__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="nav-menu__link" href="form.html" aria-current="page">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+
+    <section class="application-form">
+      <header class="application-form__header page__leveler">
+        <h1 class="application-form__title important-title">Подбор программы</h1>
+        <p class="application-form__description">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
+      </header>
+
+      <form class="application-form__fieldsets" action="#" method="post">
+        <div class="application-form__wrapper">
+          <fieldset class="application-form__fieldset page__leveler">
+            <p class="application-form__line">
+              <label for="name-input">Имя:*</label>
+              <input class="application-form__input input" id="name-input" type="text" name="name" placeholder="Барсик" autofocus>
+            </p>
+            <p class="application-form__line">
+              <label for="weight-input">Вес (кг):*</label>
+              <input class="application-form__input input" id="weight-input" type="number" name="weight" placeholder="7">
+            </p>
+            <p class="application-form__line">
+              <label for="age">Возраст (лет):</label>
+              <input class="application-form__input input" id="age" type="number" name="age" placeholder="7">
+            </p>
+          </fieldset>
+
+          <fieldset class="intent page__leveler">
+            <legend class="page__visually-hidden">Желаемый результат</legend>
+            <ul class="intent__list">
+              <li class="intent__item">
+                <input id="slim" class="intent__radio page__visually-hidden" type="radio" name="intent" value="slim" checked>
+                <label for="slim">Похудение</label>
+              </li>
+              <li class="intent__item">
+                <input id="pro" class="intent__radio page__visually-hidden" type="radio" name="intent" value="pro">
+                <label for="pro">Набор массы</label>
+              </li>
+              <li class="intent__item">
+                <input id="not-know" class="intent__radio page__visually-hidden" type="radio" name="intent" value="do-not-know">
+                <label for="not-know">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <h2 class="application-form__head subtitle">Контактные&nbsp;данные (владельца кота)</h2>
+        <fieldset class="contact-info page__leveler">
+          <p class="contact-info__line">
+            <label for="mail-input">E-mail:*</label>
+            <input class="contact-info__input contact-info__input--mail input" id="mail-input" type="email" name="e-mail" placeholder="kuklachev@gmail.com" required>
+            <span class="contact-info__icon contact-info__icon--mail"></span>
+          </p>
+          <p class="contact-info__line">
+            <label for="phone-input">Телефон:*</label>
+            <input class="contact-info__input contact-info__input--tel input" id="phone-input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+            <span class="contact-info__icon contact-info__icon--tel"></span>
+          </p>
+        </fieldset>
+        <h3 class="application-form__head application-form__head--comment subtitle">Комментарий</h3>
+        <p class="page__leveler">
+          <textarea class="application-form__comment input" id="comment" name="message" rows=8 placeholder="Расскажите обо всех повадках кота"></textarea>
+        </p>
+        <h3 class="application-form__head application-form__head--optional subtitle">Дополнительно</h3>
+        <fieldset class="optional page__leveler">
+          <ul class="optional__list">
+
+            <li class="optional__item">
+              <input class="optional__checkbox page__visually-hidden" id="sweetener" type="checkbox" name="optionally" value="sweetener" checked>
+              <label for="sweetener">Сахарозаменитель</label>
+            </li>
+
+            <li class="optional__item">
+              <input class="optional__checkbox page__visually-hidden" id="water" type="checkbox" name="optionally" value="water">
+              <label for="water">Питьевая вода</label>
+            </li>
+
+            <li class="optional__item">
+              <input class="optional__checkbox page__visually-hidden" id="milk" type="checkbox" name="optionally" value="milk">
+              <label for="milk">Молоко</label>
+            </li>
+
+            <li class="optional__item">
+              <input class="optional__checkbox page__visually-hidden" id="vitamins" type="checkbox" name="optionally" value="vitamins">
+              <label for="vitamins">Витамины</label>
+            </li>
+
+          </ul>
+        </fieldset>
+        <div class="application-form__footer page__leveler">
+          <button class="application-form__button button" type="submit" >Отправить заявку</button>
+          <p class="application-form__text">* — Обязательные поля</p>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <section class="contacts">
+    <div class="contacts__desktop-wrap page__leveler">
+      <div class="contacts__wrap">
+        <h2 class="contacts__title">Приглашаем<br> к сотрудничеству<br> дилеров!</h2>
+        <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city"> Санкт-Петербург</span></p>
+      </div>
+    </div>
+    <div class="contacts__img">
+      <noscript>
+        <picture>
+          <source media="(min-width: 1220px)" srcset="img/location-desk.png, img/location-desk@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/location-tab.png, img/location-tab@2x.png 2x">
+          <img class="contacts__map-img" src="img/location.png" srcset="img/location@2x.png" width="320" height="362"
+            alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+        </picture>
+      </noscript>
+      <iframe class="contacts__map page__visually-hidden" width="320" height="362"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+        allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </iframe>
+    </div>
+  </section>
+
+  <footer class="footer-page">
+    <div class="footer-page__info page__leveler">
+      <a class="footer-page__logo" href="index.html" title="Логотип Кэт Энерджи">
+        <svg xmlns="http://www.w3.org/2000/svg" width="128" height="24">
+          <use href="./img/logo.svg#logotype"></use>
+        </svg>
+      </a>
+      <ul class="footer-page__social-list">
+        <li class="footer-page__social-items">
+          <a class="footer-page__social-link" href="#" title="Мы в вконтакте">
+            <svg class="footer-page__vk" xmlns="http://www.w3.org/2000/svg" width="22" height="22">
+              <use href="icons/sprite.svg#vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-page__social-items">
+          <a class="footer-page__social-link" href="#" title="Мы в инстаграм">
+            <svg class="footer-page__insta" xmlns="http://www.w3.org/2000/svg" width="22" height="16">
+              <use href="icons/sprite.svg#insta"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-page__social-items">
+          <a class="footer-page__social-link" href="#" title="Мы в фейсбуке">
+            <svg class="footer-page__face" xmlns="http://www.w3.org/2000/svg" width="22" height="22">
+              <use href="icons/sprite.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <a class="footer-page__academy-link" href="https://htmlacademy.ru/intensive/adaptive"
+        title="Ссылка на сайт HTML-академии">
+        <svg xmlns="http://www.w3.org/2000/svg" width="114" height="18">
+          <use href="icons/sprite.svg#academy"></use>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34">
+          <use href="icons/sprite.svg#logo-html"></use>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/app.min.js"></script>
+
+</body>
+</html>
