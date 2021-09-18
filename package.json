@@ -34,9 +34,9 @@
     "start": "gulp"
   },
   "browserslist": [
-    "last 1 chrome version",
-    "last 1 firefox version",
-    "last 1 safari version"
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
   ],
   "editorconfig-cli": [
     "*.json",
