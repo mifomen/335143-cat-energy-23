@@ -1,0 +1,132 @@
+.location {
+  background-color: var(--white);
+
+  @media @desktop {
+    position: relative;
+  }
+}
+
+.location__intro {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  margin-bottom: 26px;
+
+  @media @tablet {
+    font-size: 20px;
+    line-height: 21px;
+    padding-left: 70px;
+    padding-right: 70px;
+    justify-content: space-between;
+    padding-top: 45px;
+    margin-bottom: 53px;
+  }
+
+  @media @desktop {
+    width: 30%;
+    background-color: var(--white);
+    position: absolute;
+    z-index: 15;
+    top: 81px;
+    left: 7.5%;
+    padding-left: 78px;
+    padding-bottom: 25px;
+    justify-content: flex-start;
+
+
+  }
+}
+
+.location__invite {
+  color: var(--black-2);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  width: 44%;
+
+  @media @tablet {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media @desktop {
+    margin-top: 23px;
+    margin-bottom: 35px;
+    margin-right: 60px;
+  }
+}
+
+.location__address--tablet-br {
+  display: none;
+
+  @media @tablet {
+    display: block;
+  }
+}
+.location__address {
+  margin-left: 16px;
+  // width: 46%;
+  color: var(--grey);
+  font-family: var(--font-second);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media @tablet {
+    text-align: right;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+   @media @desktop {
+    margin-top: 20px;
+    margin-left: 0;
+    text-align: left;
+  }
+}
+
+.location__map {
+  // z-index: 3;
+  position: relative;
+  left: 0;
+  right: 0;
+  width: calc(100vw - (100vw - 100%));
+  /*width: 100vw;*/
+  /*margin-left: calc(50% - 50vw - 0px);*/
+  height: 362px;
+  background-color: var(--white);
+  // background-image: url("../img/location-map.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media @tablet {
+    height: 400px;
+
+  }
+}
+
+.map__google {
+  position: absolute;
+  left: 0;
+  /*right: 0;*/
+  height: 100%; /* Рекомендация Google*/
+  /*width: calc(100vw - (100vw - 100%));*/
+  z-index: 10;
+  overflow: hidden;
+  width: 100vw;
+  margin-left: calc(50% - 50vw - 9px);
+  /*width: calc(100vw - (100vw - 100%));*/
+}
+
+
+// .map__img {
+//   position: relative;
+//   z-index: 7;
+// }
