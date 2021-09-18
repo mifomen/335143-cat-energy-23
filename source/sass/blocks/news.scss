@@ -1,4 +1,4 @@
-.promo {
+.news {
   box-sizing: border-box;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -44,7 +44,7 @@
   }
 }
 
-.promo__wrap {
+.news__wrap {
   padding-top: 27px;
   padding-bottom: 22px;
 
@@ -59,7 +59,7 @@
   }
 }
 
-.promo__title {
+.news__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
@@ -79,7 +79,7 @@
   }
 }
 
-.promo__text {
+.news__text {
   line-height: 14px;
   text-transform: uppercase;
   margin-bottom: 302px;
@@ -96,7 +96,7 @@
   }
 }
 
-.promo__link {
+.news__link {
   line-height: 18px;
   margin: 0 auto;
 
