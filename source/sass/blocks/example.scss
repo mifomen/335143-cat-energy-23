@@ -86,7 +86,7 @@
   margin: 0;
 }
 
-.example__promo {
+.example__news {
   --curtain-value: 1;
   --curtain-position: calc(100% * var(--curtain-value));
   display: grid;
@@ -217,7 +217,7 @@
     line-height: 20px;
   }
 
-  .example__promo {
+  .example__news {
     --curtain-value: 0.5;
   }
 
@@ -361,7 +361,7 @@
   $a: 0;
   $b: 26px;
 
-  .example__promo {
+  .example__news {
     $shiftX: $b * (1 + $a);
     min-width: 676px;
     transform: translate($shiftX - 1px, -29px);
