@@ -13,6 +13,6 @@ navToggle.addEventListener("click", function() {
     navMenu.classList.remove("nav-menu--opened");
   }
 });
-//mifomen
+//mifomen12
 let map = document.querySelector(".contacts__map");
 map.classList.remove("page__visually-hidden");
