@@ -1,6 +1,6 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Илья Кошелев](https://up.htmlacademy.ru/adaptive/23/user/335143).
+* Студент: [Илья Кошелев ](https://up.htmlacademy.ru/adaptive/23/user/335143).
 Наставник: [Татьяна Симоненко](https://up.htmlacademy.ru/adaptive/23/user/6613).
 
 ---
