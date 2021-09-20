@@ -1,6 +1,6 @@
 .news {
   box-sizing: border-box;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: var(--basic-font);
   font-weight: 400;
   font-size: 14px;
   text-align: center;
@@ -60,7 +60,7 @@
 }
 
 .news__title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: var(--basic-font);
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;

@@ -3,7 +3,7 @@
 }
 
 .example__title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: var(--basic-font);
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -40,7 +40,7 @@
 }
 
 .example__proof-value {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: var(--basic-font);
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -54,7 +54,7 @@
 
 .example__conclusion-key,
 .example__conclusion-value {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: var(--basic-font);
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -128,7 +128,7 @@
 
 .example__button {
   border: none;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: var(--basic-font);
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;

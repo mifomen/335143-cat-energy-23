@@ -57,7 +57,7 @@
 }
 
 .weight__title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: var(--basic-font);
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
@@ -85,6 +85,7 @@
   background-size: contain;
   display: flex;
   width: 50px;
+  min-width: 50px;
   height: 53px;
   margin: -9px 19px 10px 2px;
 
@@ -99,6 +100,7 @@
 
   @media (min-width: $desktop-width) {
     content: "";
+    min-width: auto;
     background: url("../../img/cat_back.png") no-repeat;
     background-size: contain;
     display: flex;
@@ -120,6 +122,7 @@
   background-size: contain;
   display: flex;
   width: 67px;
+  min-width: 67px;
   height: 50px;
   margin: -6px 10px 10px -8px;
 
@@ -138,6 +141,7 @@
     background-size: contain;
     display: flex;
     width: 134px;
+    min-width: 134px;
     height: 100px;
     margin: -30px 47px 12px -18px;
 
@@ -179,7 +183,7 @@
 }
 
 .weight__link {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: var(--basic-font);
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;

@@ -60,7 +60,7 @@
       content: counter(myCounter);
       color: var(--light_grey);
       display: flex;
-      font-family: "Oswald", "Arial", sans-serif;
+      font-family: var(--basic-font);
       font-size: 280px;
       line-height: 280px;
       position: absolute;

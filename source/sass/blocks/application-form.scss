@@ -1,5 +1,5 @@
 .application-form {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: var(--basic-font);
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -176,7 +176,7 @@
 }
 
 .application-form__text {
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--second-font);
   font-size: 14px;
   line-height: 16px;
   text-align: center;
