@@ -97,3 +97,7 @@
 .intent__radio:disabled + label::after {
   opacity: 0.3;
 }
+
+.intent__radio:disabled + label {
+  opacity: 0.3;
+}

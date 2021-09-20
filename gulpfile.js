@@ -97,7 +97,7 @@ exports.createWebp = createWebp;
 // Sprite
 
 const sprite = () => {
-  return gulp.src("source/icons/*.svg")
+  return gulp.src("source/img/icons/*.svg")
     .pipe(svgSprite({
       mode: {
         stack: {
@@ -106,7 +106,7 @@ const sprite = () => {
       },
     }
     ))
-    .pipe(gulp.dest("build/icons"));
+    .pipe(gulp.dest("build/img/icons"));
 }
 
 exports.sprite = sprite;

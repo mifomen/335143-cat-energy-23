@@ -52,7 +52,7 @@
 }
 
 .promotion__bg {
-  background: url("../../icons/sprite.svg#gift") no-repeat center 28%, var(--green_opacity);
+  background: url("../../img/icons/sprite.svg#gift") no-repeat center 28%, var(--green_opacity);
   background-size: 78px 80px;
   height: 290px;
   width: 100%;
@@ -63,14 +63,14 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    background: url("../../icons/sprite.svg#gift") no-repeat 12.5% 50%, var(--green_opacity);
+    background: url("../../img/icons/sprite.svg#gift") no-repeat 12.5% 50%, var(--green_opacity);
     background-size: 80px 83px;
     height: 200px;
     flex-direction: row;
   }
 
   @media (min-width: $desktop-width) {
-    background: url("../../icons/sprite.svg#gift") no-repeat 48% 28%, var(--green_opacity);
+    background: url("../../img/icons/sprite.svg#gift") no-repeat 48% 28%, var(--green_opacity);
     background-size: 78px 80px;
     width: 245px;
     height: 290px;

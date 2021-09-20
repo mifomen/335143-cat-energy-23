@@ -16,11 +16,11 @@
     position: relative;
 
     &--opened {
-      --nav_icon: url("../../icons/sprite.svg#cross");
+      --nav_icon: url("../../img/icons/sprite.svg#cross");
     }
 
     &--closed {
-      --nav_icon: url("../../icons/sprite.svg#menu");
+      --nav_icon: url("../../img/icons/sprite.svg#menu");
       --is_nav_visible: none;
     }
 
@@ -93,6 +93,12 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    max-width: 550px;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: 1280px) {
+    max-width: 1000px;
   }
 
   &--index {
@@ -100,6 +106,8 @@
       --text_color: var(--white);
       --line-color: currentColor;
       background-color: var(--bg_menu);
+      max-width: 1000px;
+
     }
   }
 }

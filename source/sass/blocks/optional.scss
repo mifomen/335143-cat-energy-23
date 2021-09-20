@@ -60,15 +60,19 @@
 .optional__checkbox:checked + label::after {
   content: "";
   position: absolute;
-  background: url("../../icons/sprite.svg#check") no-repeat center;
-  width: 18px;
-  height: 14px;
-  left: 8px;
-  top: 6px;
+  background: url("../../img/icons/sprite.svg#check") no-repeat center;
+  // width: 18px;
+  // height: 14px;
+  // left: 8px;
+  // top: 6px;
+  width: 26px;
+  height: 26px;
+  left: 7px;
+  top: 3px;
 
   @media (min-width: $tablet-width) {
-    left: 10px;
-    top: 8px;
+    left: 7px;
+    top: 3px;
   }
 }
 
@@ -86,5 +90,5 @@
 }
 
 .optional__checkbox:disabled + label {
-  opacity: 0.6;
+  opacity: 0.3;
 }
