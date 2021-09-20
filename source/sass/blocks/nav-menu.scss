@@ -33,7 +33,8 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
-    max-width: 50%;
+    // max-width: 50%;
+    max-width: auto;
   }
 }
 
@@ -167,8 +168,12 @@
       text-decoration-line: underline;
       text-decoration-style: solid;
       text-decoration-thickness: 2px;
-      text-underline-offset: 10px;
+      text-underline-offset: 7px;
       text-decoration-color: var(--line-color);
+    }
+
+    @media (min-width: 1280px) {
+      text-underline-offset: 11px;
     }
   }
 }

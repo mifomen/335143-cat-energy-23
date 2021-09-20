@@ -9,7 +9,7 @@
 
 
   @media (min-width: $tablet-width) {
-    --air-gap: 34px;
+    --air-gap: 36px;
     width: fit-content;
     font-size: 36px;
     line-height: 36px;
@@ -32,7 +32,7 @@
   @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
-    margin-top: 20px;
+    margin-top: 24px;
     background-color: var(--green);
     height: 2px;
     width: calc(100vw - 100% - var(--air-gap));
